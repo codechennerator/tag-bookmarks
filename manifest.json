@@ -1,0 +1,16 @@
+{
+    "name": "Tagged Bookmarks",
+    "version": "1.0",
+    "manifest_version": 2,
+
+    "description": "Find and organize your bookmarks at the next level!",
+
+    "browser_action":{
+        "default_title": "Tag your Bookmarks",
+        "default_popup": "popup.html"
+    },
+    
+    "permissions":[
+        "http://*/*", "https://*/*" 
+    ]
+}
