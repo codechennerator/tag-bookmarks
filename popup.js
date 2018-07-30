@@ -1,7 +1,9 @@
 
-document.addEventListener('DOMContentLoaded', function(){
-    let divs = document.querySelector('div');
-    for (let i = 0; i<divs.length; i++){
-        divs[i].innerHTML = i;
-    }
+document.addEventListener("DOMContentLoaded", function(){
+    let titleIn = document.querySelector('#title');
+
+    chrome.tabs.getSelected(function(tab){
+        titleIn.value = tab.title;
+    });
+
 });
